@@ -1,0 +1,32 @@
+import CertificatePage from "../pages/CertificatePage";
+import Profile from "../pages/Profile";
+export const routes = {
+  main: "/",
+  homePage: "/home",
+  account: "/account",
+  signup: "/signup",
+  signin: "/signin",
+  recoverPassword: "/recover-password",
+  resetPassword: "/reset-password",
+  aboutUs: "/about-us",
+  support: "/support",
+  profile:"/profile",
+  quotation: "/quotation",
+  lms: "/student/lms",
+  verify: "/verify",
+  requestList:"/request-list",
+  internship:"/internship",
+  scholarship: "/scholarship",
+  course:'/course',
+  dashboard: "/dashboard",
+  courseDetail:'/course-detail/:id',
+  Faqs:"/FAQs",
+  SOPs: "/SOPsPage",
+  TermsConditions: "/TermsAndConditions",
+  PrivacyPolicy: "/PrivacyPolicy",
+  LaptopScheme: "/LaptopScheme",
+  SolarScheme: "/SolarScheme",
+  adminDashboard:"/admin-dashboard",
+  CertificatePage: "/CertificatePage",
+};
+
