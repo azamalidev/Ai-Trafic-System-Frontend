@@ -1,21 +1,19 @@
 import React from 'react';
-import { useSelector } from 'react-redux';
 import Footur from '../components/footur';
 import Header from '../components/Header';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import Course from '../components/Course.js';
 import homepagePhoto from '../assets/image/homepage_photo.avif'; // Import the image
 import Testimonials from '../components/Testimonials.js';
 import Card2 from '../components/Cards2.js';
 import Header_Top from '../components/Header_Top.js';
 import { useNavigate } from 'react-router-dom';
 import { routes } from '../contant/index.js';
+import Home_Cards from '../components/Home_Cards.js';
 
 const HomePage = () => {
   const navigate = useNavigate();
-  const data = useSelector((state) => state.data); // Access Redux state
   const authenticate = localStorage.getItem('token');
   console.log(authenticate);
 
@@ -54,12 +52,12 @@ const HomePage = () => {
         </div>
       </div>
 
-      {/* <section className='relative mt-0 text-center mx-auto'>
-        <Course />
+      <section className='relative mt-0 text-center mx-auto'>
+        <Home_Cards/>
         <Testimonials />
         <Card2 />
         <Footur />
-      </section> */}
+      </section>
     </div>
   );
 };
