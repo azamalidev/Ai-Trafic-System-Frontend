@@ -3,7 +3,6 @@ import { motion } from "framer-motion"; // Import Framer Motion
 import Footur from "../components/footur";
 import Header from "../components/Header";
 import coverImage from "../assets/image/cover.png";
-import videodm from "../assets/image/videodm.mp4";
 
 const Counter = ({ target, title }) => {
   const [count, setCount] = useState(0);
@@ -102,15 +101,6 @@ const AboutUs = () => {
                 <p className="text-gray-700 mt-3 text-sm sm:text-base">{point}</p>
               </motion.div>
             ))}
-          </div>
-
-          {/* Video */}
-          <div className="px-4 sm:px-6 lg:px-12">
-            <video
-              controls
-              src={videodm}
-              className="w-full h-auto rounded-lg shadow-md"
-            />
           </div>
         </div>
       </motion.div>
