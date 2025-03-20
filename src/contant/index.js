@@ -1,4 +1,5 @@
 
+
 export const routes = {
   main: "/",
   homePage: "/home",
@@ -16,5 +17,6 @@ export const routes = {
   TermsConditions: "/TermsAndConditions",
   PrivacyPolicy: "/PrivacyPolicy",
   adminDashboard:"/admin-dashboard",
+  TrafficAnalysis:"/trafficanalysis"
 };
 
