@@ -23,11 +23,11 @@ const Header_Top = () => {
       }}
     >
       <div className='container mx-auto flex flex-wrap justify-between items-center'>
-        {/* Left Section: Promotional Offer or Key Feature */}
+        {/* Left Section: Key Feature */}
         <div className='hidden md:flex items-center justify-start !space-x-2 h-auto'>
           <Icons.Zap className='h-4 w-4 flex-shrink-0 text-blue-600' />
           <p className='text-sm leading-none m-0 text-gray-800'>
-            Compare Products Instantly with AI-Powered Tools!
+            Optimize Traffic Flow with AI-Powered Tools!
           </p>
         </div>
 
@@ -53,7 +53,7 @@ const Header_Top = () => {
               <div className='border-l-2 border-gray-300 max-h-full'></div>
               <div className='flex gap-1'>
                 <button className='text-sm text-gray-800 hover:text-blue-600'>
-                  Subscription Active
+                  Welcome To Ai Traffic Management System 
                 </button>
               </div>
             </>

@@ -42,16 +42,16 @@ const Header = () => {
     navigate(routes.aboutUs);
   };
 
-  const gotoFileUpload = () => {
-    navigate(routes.fileUpload);
+  const gotoTrafficAnalysis = () => {
+    navigate(routes.trafficanalysis);
   };
 
-  const gotoWebScraper = () => {
-    navigate(routes.webScraper);
+  const gotoRealTimeMonitoring = () => {
+    navigate(routes.realTimeMonitoring);
   };
 
-  const gotoComparisonResults = () => {
-    navigate(routes.comparisonResults);
+  const gotoDynamicSignalControl = () => {
+    navigate(routes.dynamicSignalControl);
   };
 
   const gotoAdminPanel = () => {
@@ -62,8 +62,8 @@ const Header = () => {
     navigate(routes.subscriptionManagement);
   };
 
-  const gotoAIGeneratedEmail = () => {
-    navigate(routes.aiGeneratedEmail);
+  const gotoAIGeneratedReports = () => {
+    navigate(routes.aiGeneratedReports);
   };
 
   useEffect(() => {
@@ -95,7 +95,7 @@ const Header = () => {
       className="flex justify-between items-center py-2 px-4 lg:px-6"
     >
       {/* Logo */}
-      <h5 className="text-white text-lg font-bold">AI Comparison Tool</h5>
+      <h5 className="text-white text-lg font-bold">AI Traffic Management</h5>
 
       {/* Desktop Navigation */}
       <div className="hidden lg:flex items-center space-x-6">
@@ -107,28 +107,28 @@ const Header = () => {
           Home
         </button>
 
-        {/* File Upload */}
+        {/* Traffic Analysis */}
+        <Link to="/traffic-analysis">
         <button
-          onClick={gotoFileUpload}
           className="text-white transition-colors duration-300 hover:text-amber-300 focus:outline-none"
         >
-          Upload CSV
-        </button>
+          Traffic Analysis
+        </button></Link>
 
-        {/* Web Scraper */}
+        {/* Real-Time Monitoring */}
+        <Link to="/RealTimeMonitoring">
         <button
-          onClick={gotoWebScraper}
           className="text-white transition-colors duration-300 hover:text-amber-300 focus:outline-none"
         >
-          Web Scraper
-        </button>
+          Real-Time Monitoring
+        </button></Link>
 
-        {/* Comparison Results */}
+        {/* Dynamic Signal Control */}
         <button
-          onClick={gotoComparisonResults}
+          onClick={gotoDynamicSignalControl}
           className="text-white transition-colors duration-300 hover:text-amber-300 focus:outline-none"
         >
-          Comparison Results
+          Signal Control
         </button>
 
         {/* Admin Panel */}
@@ -151,12 +151,12 @@ const Header = () => {
           </button>
         )}
 
-        {/* AI-Generated Email */}
+        {/* AI-Generated Reports */}
         <button
-          onClick={gotoAIGeneratedEmail}
+          onClick={gotoAIGeneratedReports}
           className="text-white transition-colors duration-300 hover:text-amber-300 focus:outline-none"
         >
-          AI Email
+          AI Reports
         </button>
       </div>
 
@@ -175,28 +175,28 @@ const Header = () => {
             Home
           </button>
 
-          {/* File Upload */}
+          {/* Traffic Analysis */}
           <button
-            onClick={gotoFileUpload}
+            onClick={gotoTrafficAnalysis}
             className="text-gray-800 transition-colors duration-300 hover:text-amber-500 focus:outline-none text-left"
           >
-            Upload CSV
+            Traffic Analysis
           </button>
 
-          {/* Web Scraper */}
+          {/* Real-Time Monitoring */}
           <button
-            onClick={gotoWebScraper}
+            onClick={gotoRealTimeMonitoring}
             className="text-gray-800 transition-colors duration-300 hover:text-amber-500 focus:outline-none text-left"
           >
-            Web Scraper
+            Real-Time Monitoring
           </button>
 
-          {/* Comparison Results */}
+          {/* Dynamic Signal Control */}
           <button
-            onClick={gotoComparisonResults}
+            onClick={gotoDynamicSignalControl}
             className="text-gray-800 transition-colors duration-300 hover:text-amber-500 focus:outline-none text-left"
           >
-            Comparison Results
+            Signal Control
           </button>
 
           {/* Admin Panel */}
@@ -219,12 +219,12 @@ const Header = () => {
             </button>
           )}
 
-          {/* AI-Generated Email */}
+          {/* AI-Generated Reports */}
           <button
-            onClick={gotoAIGeneratedEmail}
+            onClick={gotoAIGeneratedReports}
             className="text-gray-800 transition-colors duration-300 hover:text-amber-500 focus:outline-none text-left"
           >
-            AI Email
+            AI Reports
           </button>
         </div>
       </div>
@@ -286,13 +286,6 @@ const Header = () => {
         <div className="absolute right-4 top-14  w-36 bg-white border-1 border-zinc-500 rounded-lg shadow-lg z-50">
           <div className="absolute top-[-9px] right-4 w-4 h-4 bg-white border-t-2 border-l-2 border-zinc-500 transform rotate-45"></div>
           <div className="py-2">
-            <Link
-              to={routes.profile}
-              className="flex items-center no-underline px-4 py-2 text-sm text-gray-600 hover:bg-gray-200  hover:rounded-md"
-            >
-              <User size={18} className="mr-2" />
-              <span>Profile</span>
-            </Link>
             <button
               onClick={logout}
               className="flex items-center px-4 py-2 text-sm text-gray hover:bg-gray-200 hover:rounded-md w-full"
