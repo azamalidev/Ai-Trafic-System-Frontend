@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import ProfileIcon from '../assets/icons/profile';
 import { routes } from '../contant';
-import { LogOut, User, ChevronDown, ChevronUp, Menu, X, FileText, Settings, Mail, Scissors, FileInput, FileOutput, Shield } from 'lucide-react';
+import { LogOut, Menu, X,} from 'lucide-react';
 import { Link, useNavigate } from 'react-router-dom';
 import { getProfile } from '../redux/action/auth';
 import { useDispatch, useSelector } from 'react-redux';
@@ -10,7 +10,6 @@ const Header = () => {
   const navigate = useNavigate();
   const { profile } = useSelector((state) => state.auth);
   const dispatch = useDispatch();
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false); // For mobile menu toggle
@@ -124,12 +123,13 @@ const Header = () => {
         </button></Link>
 
         {/* Dynamic Signal Control */}
+        <Link to="/SignalControl">
         <button
           onClick={gotoDynamicSignalControl}
           className="text-white transition-colors duration-300 hover:text-amber-300 focus:outline-none"
         >
           Signal Control
-        </button>
+        </button></Link>
 
         {/* Admin Panel */}
         {profile?.role === 'admin' && (
