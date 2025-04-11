@@ -18,6 +18,7 @@ import AdminDashboard from './pages/dashboard/AdminDashboard';
 import TrafficAnalysis from './components/TrafficAnalysis';
 import RealTimeMonitoring from './components/RealTimeMonitoring';
 import SignalControl from './components/SignalControl';
+import AIGeneratedReports from './components/AiGeneratedResports';
 
 // Public Route Component
 const PublicRoute = ({ children }) => {
@@ -94,6 +95,7 @@ function App() {
         <Route path="/traffic-analysis" element={<TrafficAnalysis />} />
         <Route path="/RealTimeMonitoring" element={<RealTimeMonitoring />} />
         <Route path="/SignalControl" element={<SignalControl />} />
+        <Route path="/Ai-Reports" element={<AIGeneratedReports />} />
         <Route
           path={routes.signup}
           element={

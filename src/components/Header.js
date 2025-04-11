@@ -62,7 +62,7 @@ const Header = () => {
   };
 
   const gotoAIGeneratedReports = () => {
-    navigate(routes.aiGeneratedReports);
+    navigate(routes.AIGeneratedReports);
   };
 
   useEffect(() => {
